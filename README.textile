@@ -1,0 +1,15 @@
+h2. RIA Unleashed 2011 Presentations and Code
+
+Included are the slide decks and code for my Workshop and Presentation 
+at RIA Unleashed 2011. Preso files are under Creative Commons and
+code is under MIT.
+
+"Follow up blog":http://jessewarden.com/2011/10/ria-unleashed-2011.html
+
+Jesse Warden
+"email: jessew@webappsolution.com":jessew@webappsolution.com
+"twitter: @jesterxl":@jesterxl
+"blog: http://jessewarden.com":http://jessewarden.com
+
+"Refactoring Preso":http://www.slideshare.net/jesterxl/refactoring-ria-unleashed-2011
+"Mobile Gaming Preso":http://www.slideshare.net/jesterxl/mobile-gaming-corona-sdk-adobe-air-ria-unleashed-2011
