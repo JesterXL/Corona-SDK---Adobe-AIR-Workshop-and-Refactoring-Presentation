@@ -1,3 +1,8 @@
+You can see preso online here:
+
+http://www.slideshare.net/jesterxl/mobile-gaming-corona-sdk-adobe-air-ria-unleashed-2011
+
+
 === Code & Tools ===
 
 TextMate
