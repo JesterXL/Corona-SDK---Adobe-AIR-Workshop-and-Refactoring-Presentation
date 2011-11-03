@@ -4,7 +4,7 @@ Included are the slide decks and code for my Workshop and Presentation
 at RIA Unleashed 2011. Preso files are under Creative Commons and
 code is under MIT.
 
-"Follow up blog":http://jessewarden.com/2011/10/ria-unleashed-2011.html
+"Follow up blog post on RIA Unleashed 2011":http://jessewarden.com/2011/10/ria-unleashed-2011.html
 
 Jesse Warden
 "email: jessew@webappsolution.com":jessew@webappsolution.com
