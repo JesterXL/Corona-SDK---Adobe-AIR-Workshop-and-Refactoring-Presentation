@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="com.adobe.flexbuilder.debug.launchConfigurationType.flash">
+<stringAttribute key="com.adobe.flexbuilder.debug.ATTR_APPLICATION" value="src/Lesson2_d.as"/>
+<stringAttribute key="com.adobe.flexbuilder.debug.ATTR_PROJECT" value="Lesson2"/>
+<stringAttribute key="com.adobe.flexbuilder.debug.ATTR_RUN_URL" value="file:/Users/jesterxl/Documents/_Projects/RIAUnleashed-2011/Corona-SDK---Adobe-AIR-Workshop-and-Refactoring-Presentation/code/Flash/airmobile-workspace/Lesson2/bin-debug/Lesson2_d.html"/>
+<booleanAttribute key="com.adobe.flexbuilder.debug.ATTR_USE_DEFAULT_URLS" value="true"/>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/Lesson2"/>
+<listEntry value="/Lesson2/src/Lesson2_d.as"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="4"/>
+<listEntry value="1"/>
+</listAttribute>
+</launchConfiguration>

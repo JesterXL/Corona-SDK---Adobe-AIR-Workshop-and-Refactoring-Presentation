@@ -1,0 +1,26 @@
+package
+{
+	import flash.display.Sprite;
+	
+	public class Lesson2_k extends Sprite
+	{
+		public function Lesson2_k()
+		{
+			super();
+			
+			sayHello();
+			
+			whoAmI();
+		}
+		
+		private function sayHello():void
+		{
+			trace("Hello!");
+		}
+		
+		private function whoAmI():void
+		{
+			trace("this: " + this);
+		}
+	}
+}

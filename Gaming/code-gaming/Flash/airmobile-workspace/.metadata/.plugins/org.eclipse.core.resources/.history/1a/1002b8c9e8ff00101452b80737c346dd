@@ -1,0 +1,24 @@
+package
+{
+	import flash.display.Sprite;
+	
+	public class Lesson2_e extends Sprite
+	{
+		public function Lesson2_e()
+		{
+			super();
+			
+			var name:String = null;
+			trace("name: " + name);
+			name = "Cow";
+			trace("name: " + name);
+			name = null;
+			trace("name: " + name);
+			
+			var value:Number;
+			trace("value: " + value);
+			value = 2;
+			trace("value: " + value);
+		}
+	}
+}

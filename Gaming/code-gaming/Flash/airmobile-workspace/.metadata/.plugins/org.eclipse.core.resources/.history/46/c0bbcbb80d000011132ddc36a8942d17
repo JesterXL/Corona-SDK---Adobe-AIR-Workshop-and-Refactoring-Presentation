@@ -1,0 +1,12 @@
+package
+{
+	import flash.display.Sprite;
+	
+	public class Lesson4_a_TestingSpriteSheet extends Sprite
+	{
+		public function Lesson4_a_TestingSpriteSheet()
+		{
+			super();
+		}
+	}
+}

@@ -1,0 +1,14 @@
+package
+{
+	import flash.display.Sprite;
+	
+	public class Lesson2 extends Sprite
+	{
+		public function Lesson2()
+		{
+			
+			trace("Hello World!");
+			
+		}
+	}
+}

@@ -1,0 +1,70 @@
+package com.jessewarden.sprites
+{
+	import com.jessewarden.constants.Direction;
+	
+	import flash.display.Bitmap;
+	import flash.display.BitmapData;
+	import flash.display.Loader;
+	import flash.events.Event;
+	import flash.net.dns.AAAARecord;
+	
+	public class Character extends Bitmap
+	{
+		private var _loaded:Boolean = false;
+		private var _direction:String;
+		
+		private var loader:Loader;
+		private var sheetBitmap:Bitmap;
+		
+		public function get loaded():Boolean { return _loaded; }
+		
+		public function get direction():String { return _direction; }
+		public function set direction(value:String):void
+		{
+			_direction = value;
+			updateSprite();
+		}
+		
+		public function Character()
+		{
+			super();
+		}
+		
+		public function init():void
+		{
+			loader = new Loader();
+			loader.contentLoaderInfo.addEventListener(Event.COMPLETE, onSheetLoaded);
+		}
+		
+		private function onSheetLoaded(event:Event):void
+		{
+			_loaded = true;
+			sheetBitmap = loader.content as Bitmap;
+			updateSprite();
+		}
+		
+		private function updateSprite():void
+		{
+			switch(_direction)
+			{
+				case Direction.EAST:
+					walkEast();
+					break;
+				
+				case Direction.WEST:
+					walkWest();
+					break;
+				
+				case Direction.NORTH:
+					walkNorth();
+					break;
+				
+				case Direction.SOUTH:
+					walkSouth();
+					break;
+			}
+		}
+		
+		
+	}
+}

@@ -1,0 +1,38 @@
+package com.jessewarden.gui
+{
+	import com.jessewarden.constants.Direction;
+	
+	import flash.display.Sprite;
+	
+	public class ArrowButton extends Sprite
+	{
+		private var _direction:String;
+		
+		public function get direction():String { return _direction; }
+		
+		public function ArrowButton(direction:String)
+		{
+			super();
+			
+			_direction = direction;
+			switch(_direction)
+			{
+				case Direction.EAST:
+					
+					break;
+				
+				case Direction.WEST:
+					
+					break;
+				
+				case Direction.NORTH:
+					
+					break;
+				
+				case Direction.SOUTH:
+					
+					break;
+			}
+		}
+	}
+}

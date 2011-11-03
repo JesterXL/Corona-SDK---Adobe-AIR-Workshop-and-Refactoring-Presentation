@@ -1,0 +1,26 @@
+package
+{
+	import flash.display.Sprite;
+	import flash.display.StageAlign;
+	import flash.display.StageScaleMode;
+	import flash.events.Event;
+	
+	public class Lesson3 extends Sprite
+	{
+		public function Lesson3()
+		{
+			super();
+			
+			init();
+		}
+		
+		private function init():void
+		{
+			stage.align = StageAlign.TOP_LEFT;
+			stage.scaleMode = StageScaleMode.NO_SCALE;
+			stage.frameRate = 60;
+			
+			// 1280x768
+		}
+	}
+}

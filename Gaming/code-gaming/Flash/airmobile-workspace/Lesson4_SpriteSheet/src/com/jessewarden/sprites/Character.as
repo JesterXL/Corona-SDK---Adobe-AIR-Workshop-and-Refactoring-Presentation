@@ -1,0 +1,153 @@
+package com.jessewarden.sprites
+{
+	import com.jessewarden.constants.Direction;
+	
+	import flash.display.Bitmap;
+	import flash.display.BitmapData;
+	import flash.display.Loader;
+	import flash.events.Event;
+	import flash.geom.Matrix;
+	import flash.geom.Point;
+	import flash.geom.Rectangle;
+	import flash.net.URLRequest;
+	import flash.net.dns.AAAARecord;
+	
+	public class Character extends Bitmap
+	{
+		private var _loaded:Boolean = false;
+		private var _direction:String = Direction.SOUTH;
+		private var moving:Boolean = false;
+		private var moveSpeed:Number = 1;
+		
+		private var loader:Loader;
+		private var sheetBitmapData:BitmapData;
+		private var sourcePoint:Point = new Point(0, 0);
+		private var copyRect:Rectangle;
+		
+		public function get loaded():Boolean { return _loaded; }
+		
+		public function get direction():String { return _direction; }
+		public function set direction(value:String):void
+		{
+			_direction = value;
+			updateSprite();
+		}
+		
+		public function Character()
+		{
+			super();
+		}
+		
+		public function init():void
+		{
+			loader = new Loader();
+			loader.contentLoaderInfo.addEventListener(Event.COMPLETE, onSheetLoaded);
+			loader.load(new URLRequest("spritesheet.png"));
+		}
+		
+		private function onSheetLoaded(event:Event):void
+		{
+			_loaded 		= true;
+			sheetBitmapData = Bitmap(loader.content).bitmapData;
+			bitmapData 		= new BitmapData(26, 26, true, 0);
+			copyRect		= new Rectangle(0, 0, 26, 26);
+			updateSprite();
+		}
+		
+		private function updateSprite():void
+		{
+			switch(_direction)
+			{
+				case Direction.EAST:
+					walkEast();
+					break;
+				
+				case Direction.WEST:
+					walkWest();
+					break;
+				
+				case Direction.NORTH:
+					walkNorth();
+					break;
+				
+				case Direction.SOUTH:
+					walkSouth();
+					break;
+			}
+		}
+		
+		private function walkEast():void
+		{
+			copyRect.y = 0;
+			updateBitmap();
+		}
+		
+		private function walkWest():void
+		{
+			copyRect.y = 27;
+			updateBitmap();
+		}
+		
+		private function walkNorth():void
+		{
+			copyRect.y = 79;
+			updateBitmap();
+		}
+		
+		private function walkSouth():void
+		{
+			copyRect.y = 49;
+			updateBitmap();
+		}
+		
+		private function updateBitmap():void
+		{
+			bitmapData.copyPixels(sheetBitmapData, copyRect, sourcePoint);
+			this.cacheAsBitmap = true;
+			this.cacheAsBitmapMatrix = new Matrix();
+		}
+		
+		public function startMoving(direction:String):void
+		{
+			_direction = direction;
+			updateSprite();
+			
+			if(moving == false)
+			{
+				moving = true;
+				addEventListener(Event.ENTER_FRAME, onMove);
+			}
+		}
+		
+		public function stopMoving():void
+		{
+			if(moving)
+			{
+				moving = false;
+				removeEventListener(Event.ENTER_FRAME, onMove);
+			}
+		}
+		
+		private function onMove(event:Event):void
+		{
+			switch(_direction)
+			{
+				case Direction.EAST:
+					x += moveSpeed;
+					break;
+				
+				case Direction.WEST:
+					x -= moveSpeed;
+					break;
+				
+				case Direction.NORTH:
+					y -= moveSpeed;
+					break;
+				
+				case Direction.SOUTH:
+					y += moveSpeed;
+					break;
+			}
+		}
+	}
+}

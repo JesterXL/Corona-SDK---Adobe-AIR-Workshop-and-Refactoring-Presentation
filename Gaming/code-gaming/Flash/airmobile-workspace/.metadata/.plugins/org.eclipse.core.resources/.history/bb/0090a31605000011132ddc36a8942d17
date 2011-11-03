@@ -1,0 +1,18 @@
+package
+{
+	import flash.display.Sprite;
+	import flash.display.StageAlign;
+	import flash.display.StageScaleMode;
+	
+	public class Lesson3_e_copyPixels_move extends Sprite
+	{
+		public function Lesson3_e_copyPixels_move()
+		{
+			super();
+			
+			// support autoOrients
+			stage.align = StageAlign.TOP_LEFT;
+			stage.scaleMode = StageScaleMode.NO_SCALE;
+		}
+	}
+}

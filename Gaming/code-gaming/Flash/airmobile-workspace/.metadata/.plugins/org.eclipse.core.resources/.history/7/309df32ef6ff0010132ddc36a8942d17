@@ -1,0 +1,12 @@
+package
+{
+	import flash.display.Sprite;
+	
+	public class Lesson3_d_ScrollRect_Move extends Sprite
+	{
+		public function Lesson3_d_ScrollRect_Move()
+		{
+			super();
+		}
+	}
+}

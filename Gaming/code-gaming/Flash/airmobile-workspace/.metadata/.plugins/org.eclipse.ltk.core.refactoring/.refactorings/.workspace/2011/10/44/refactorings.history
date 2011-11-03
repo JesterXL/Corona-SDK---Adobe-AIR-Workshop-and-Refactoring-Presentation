@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;Lesson3_c_ScrollRect&apos; to &apos;Lesson3_c_d_ScrollRect&apos;" description="Rename resource &apos;Lesson3_c_ScrollRect&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/Lesson3_c_ScrollRect" name="Lesson3_c_d_ScrollRect" stamp="1319655657587" updateReferences="true"/>
+</session>

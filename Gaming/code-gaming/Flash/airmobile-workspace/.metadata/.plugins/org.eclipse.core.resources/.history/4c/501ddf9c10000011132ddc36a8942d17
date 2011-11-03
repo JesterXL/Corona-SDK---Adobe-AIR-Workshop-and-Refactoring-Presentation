@@ -1,0 +1,16 @@
+package com.jessewarden.gui
+{
+	import flash.display.Sprite;
+	
+	public class ArrowButton extends Sprite
+	{
+		private var _direction:String;
+		
+		public function get direction():String { return _direction; }
+		
+		public function ArrowButton(direction:String)
+		{
+			super();
+		}
+	}
+}

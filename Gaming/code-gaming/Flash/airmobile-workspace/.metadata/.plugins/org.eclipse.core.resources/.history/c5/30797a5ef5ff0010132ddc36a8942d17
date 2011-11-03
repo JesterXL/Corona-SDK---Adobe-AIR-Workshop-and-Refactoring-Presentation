@@ -1,0 +1,12 @@
+package com.jessewarden.maps
+{
+	import flash.display.Sprite;
+	
+	public class ScrollingMap extends Sprite
+	{
+		public function ScrollingMap()
+		{
+			super();
+		}
+	}
+}

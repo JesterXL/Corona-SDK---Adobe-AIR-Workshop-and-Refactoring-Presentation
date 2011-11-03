@@ -1,0 +1,13 @@
+package com.jessewarden.sprites
+{
+	import flash.display.Bitmap;
+	import flash.display.BitmapData;
+	
+	public class Character extends Bitmap
+	{
+		public function Character(bitmapData:BitmapData=null, pixelSnapping:String="auto", smoothing:Boolean=false)
+		{
+			super(bitmapData, pixelSnapping, smoothing);
+		}
+	}
+}

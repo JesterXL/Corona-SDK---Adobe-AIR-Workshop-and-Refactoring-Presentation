@@ -1,0 +1,12 @@
+package com.jessewarden.gui
+{
+	import flash.display.Sprite;
+	
+	public class ArrowButton extends Sprite
+	{
+		public function ArrowButton()
+		{
+			super();
+		}
+	}
+}

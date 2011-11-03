@@ -1,0 +1,17 @@
+package
+{
+	import flash.display.Sprite;
+	
+	public class Lesson2_n extends Sprite
+	{
+		public function Lesson2_n()
+		{
+			super();
+			
+			var box1:Box = new Box();
+			addChild(box1);
+			box1.x = 100;
+			box1.y = 100;
+		}
+	}
+}

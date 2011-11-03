@@ -1,0 +1,12 @@
+package com.jessewarden.examples
+{
+	import flash.display.Shape;
+	
+	public class SupaBox extends Shape
+	{
+		public function SupaBox()
+		{
+			super();
+		}
+	}
+}

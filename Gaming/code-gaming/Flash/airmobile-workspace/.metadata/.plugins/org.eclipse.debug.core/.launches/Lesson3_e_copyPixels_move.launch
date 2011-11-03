@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="com.adobe.flexbuilder.debug.launchConfigurationType.multiplatform">
+<stringAttribute key="com.adobe.flexbuilder.debug.ATTR_AIR_COMMAND_LINE_ARGUMENTS" value=""/>
+<stringAttribute key="com.adobe.flexbuilder.debug.ATTR_AIR_PUBLISHER_ID" value=""/>
+<stringAttribute key="com.adobe.flexbuilder.debug.ATTR_AIR_SECURITY_POLICY_FILE" value="security-policies/default.xml"/>
+<stringAttribute key="com.adobe.flexbuilder.debug.ATTR_APPLICATION" value="src/Lesson3_e_copyPixels_move.as"/>
+<booleanAttribute key="com.adobe.flexbuilder.debug.ATTR_CLEAR_APP_DATA" value="false"/>
+<stringAttribute key="com.adobe.flexbuilder.debug.ATTR_MOBILE_DEVICE_NAME" value="Google Nexus One"/>
+<stringAttribute key="com.adobe.flexbuilder.debug.ATTR_MOBILE_LAUNCH_HANDLER" value="com.adobe.flexide.multiplatform.android.launching.AndroidOnDeviceLaunchHandler"/>
+<stringAttribute key="com.adobe.flexbuilder.debug.ATTR_MOBILE_PLATFORM" value="com.adobe.flexide.multiplatform.android.platform"/>
+<stringAttribute key="com.adobe.flexbuilder.debug.ATTR_PROJECT" value="Lesson3_e_copyPixels_move"/>
+<stringAttribute key="com.adobe.flexbuilder.debug.ATTR_RUN_URL" value="file:/Users/jesterxl/Documents/_Projects/RIAUnleashed-2011/Corona-SDK---Adobe-AIR-Workshop-and-Refactoring-Presentation/code/Flash/airmobile-workspace/Lesson3_e_copyPixels_move/bin-debug/Lesson3_e_copyPixels_move-app.xml"/>
+<booleanAttribute key="com.adobe.flexbuilder.debug.ATTR_USE_DEFAULT_URLS" value="true"/>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
+<listEntry value="/Lesson3_e_copyPixels_move"/>
+<listEntry value="/Lesson3_e_copyPixels_move/src/Lesson3_e_copyPixels_move.as"/>
+</listAttribute>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES">
+<listEntry value="4"/>
+<listEntry value="1"/>
+</listAttribute>
+</launchConfiguration>

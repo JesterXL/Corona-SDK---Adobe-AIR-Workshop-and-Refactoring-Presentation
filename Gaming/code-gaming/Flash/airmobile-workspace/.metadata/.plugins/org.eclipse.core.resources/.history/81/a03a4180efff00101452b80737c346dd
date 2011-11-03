@@ -1,0 +1,17 @@
+package com.jessewarden.examples
+{
+	import flash.display.Shape;
+	
+	public class SupaBox extends Shape
+	{
+		public function SupaBox(w:Number, h:Number)
+		{
+			super();
+			
+			graphics.lineStyle(0, 0x000000);
+			graphics.beginFill(0xEEEEEE);
+			graphics.drawRect(0, 0, w, h);
+			graphics.endFill();
+		}
+	}
+}

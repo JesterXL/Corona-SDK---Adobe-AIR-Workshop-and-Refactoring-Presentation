@@ -1,0 +1,9 @@
+package com.jessewarden.constants
+{
+	public class Direction
+	{
+		public function Direction()
+		{
+		}
+	}
+}

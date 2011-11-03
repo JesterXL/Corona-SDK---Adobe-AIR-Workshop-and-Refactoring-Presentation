@@ -1,0 +1,50 @@
+package
+{
+	import flash.display.Sprite;
+	
+	public class Lesson2_k extends Sprite
+	{
+		public function Lesson2_k()
+		{
+			super();
+			
+			sayHello();
+			
+			whoAmI();
+			
+			var result:Number = add(1, 2);
+			trace("result should be 3: " + result);
+			
+			var list:Array = ["James Wong", "Erica Priest", "Zahara Fahul", "Princess Pei Pei"];
+			trace("list: " + list.join("|"));
+			list.forEach = function(obj:Object):void
+			{
+				var string:String = obj as String;
+				var words:Array = string.split(" ");
+				var first:String = words[0];
+				words.splice(0, 1);
+				var second:String = words.join(" ");
+				obj = second + ", " + first;
+			};
+			trace("modified list: " + list.join("|"));
+			
+		}
+		
+		private function sayHello():void
+		{
+			trace("Hello!");
+		}
+		
+		private function whoAmI():void
+		{
+			trace("this: " + this);
+		}
+		
+		private function add(first:Number, second:Number):Number
+		{
+			return first + second;
+		}
+		
+		
+	}
+}

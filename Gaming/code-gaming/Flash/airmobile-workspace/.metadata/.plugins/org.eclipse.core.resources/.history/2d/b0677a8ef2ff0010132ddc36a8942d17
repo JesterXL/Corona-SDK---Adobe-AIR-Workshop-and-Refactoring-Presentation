@@ -1,0 +1,12 @@
+package com.jessewarden.maps
+{
+	import flash.display.Sprite;
+	
+	public class MovingMap extends Sprite
+	{
+		public function MovingMap()
+		{
+			super();
+		}
+	}
+}

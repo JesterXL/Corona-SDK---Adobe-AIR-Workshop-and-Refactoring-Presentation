@@ -1,0 +1,34 @@
+package
+{
+	import flash.display.Sprite;
+	
+	public class Lesson2_k extends Sprite
+	{
+		public function Lesson2_k()
+		{
+			super();
+			
+			sayHello();
+			
+			whoAmI();
+			
+			var result:Number = add(1, 2);
+			trace("result should be 3: " + result);
+		}
+		
+		private function sayHello():void
+		{
+			trace("Hello!");
+		}
+		
+		private function whoAmI():void
+		{
+			trace("this: " + this);
+		}
+		
+		private function add(first:Number, second:Number):Number
+		{
+			return first + second;
+		}
+	}
+}

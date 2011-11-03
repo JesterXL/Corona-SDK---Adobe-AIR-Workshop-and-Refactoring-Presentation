@@ -1,0 +1,33 @@
+package com.jessewarden.maps
+{
+	import flash.display.Sprite;
+	import flash.geom.Rectangle;
+	
+	public class MovingMap extends Sprite
+	{
+		
+		private var mapURL:String;
+		private var tileWidth:Number;
+		private var tileHeight:Number;
+		private var rowsToShow:uint;
+		private var columsToShow:uint;
+		private var viewRect:Rectangle;
+		
+		public function MovingMap()
+		{
+			super();
+		}
+		
+		public function init(mapURL:String, tileWidth:Number, tileHeight:Number, rowsToShow:uint, columnsToShow:uint):void
+		{
+			this.mapURL			= mapURL;
+			this.tileWidth		= tileWidth;
+			this.tileHeight		= tileHeight;
+			this.rowsToShow		= rowsToShow;
+			this.columsToShow 	= columnsToShow;
+			
+			viewRect 			= new Rectangle(tileWidth * columnsToShow, tileHeight * rowsToShow);
+		}
+		
+	}
+}

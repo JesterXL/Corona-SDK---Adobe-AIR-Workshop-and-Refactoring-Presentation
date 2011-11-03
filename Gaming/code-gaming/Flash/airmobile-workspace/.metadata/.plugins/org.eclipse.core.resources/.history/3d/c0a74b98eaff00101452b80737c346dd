@@ -1,0 +1,25 @@
+package
+{
+	import flash.display.Sprite;
+	
+	public class Lesson2_g extends Sprite
+	{
+		public function Lesson2_g()
+		{
+			super();
+			
+			var truth:Boolean = true;
+			if(truth == true)
+			{
+				trace("Supeeeerrrrrrrrr!");
+			}
+			
+			if(truth)
+				trace("Supa shorthand!");
+			
+			if(truth != false) trace("Supa dupah 1 liner!");
+			
+			truth == false ? trace("Supa tern!") : trace("No good...");
+		}
+	}
+}
